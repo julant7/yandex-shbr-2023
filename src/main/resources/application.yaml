@@ -1,0 +1,38 @@
+spring:
+  data:
+    redis:
+      database: 0
+      host: localhost
+      port: 6379
+  application:
+    name: test_task
+  datasource:
+    url: jdbc:postgresql://postgres:password@db/postgres
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+constants:
+  walking:
+    sum: 2
+    rating: 3
+    max_weight: 10
+    max_count: 2
+    district_count: 1
+    first_order_in_one_district_time: 25
+    other_orders_in_one_district_time: 10
+  bicycle:
+    sum: 3
+    rating: 2
+    max_weight: 20
+    max_count: 4
+    district_count: 2
+    first_order_in_one_district_time: 12
+    other_orders_in_one_district_time: 8
+  car:
+    sum: 4
+    rating: 1
+    max_weight: 40
+    max_count: 7
+    district_count: 3
+    first_order_in_one_district_time: 8
+    other_orders_in_one_district_time: 4
